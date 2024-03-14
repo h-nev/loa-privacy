@@ -8,4 +8,4 @@ This folder appears empty on GitHub, as it is just a common placeholder for data
 
 The datasets we used are from:
 
-- [SAMHSA: Mental Health Client-Level Data (MH-CLD)](https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2021-mh-cld-2021-ds0001)
+- [The Stanford Open Policing Project] (https://openpolicing.stanford.edu/data/)
