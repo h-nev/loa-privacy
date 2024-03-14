@@ -2,13 +2,12 @@
 
 ## Course Information
 
-*DPI 617 : Law, Order, and Algorithms*
+*DPI 617: Law, Order, and Algorithms*
 
 *Spring 2024*
 
 ## Research Question
-As time passes, more data gets released for general use. Consequently, the feasibility of malicious actors deanonymizing aggregated data rises dangerously. What is the quantifiable risk to individuals when health information of varying anonymization is published? Can we develop an effective risk and privacy algorithm to measure that risk? What protections, legal and otherwise, fail to keep re-identification at bay? 
-
+As time passes, more data is released for general use. Consequently, the feasibility of malicious actors deanonymizing aggregated data rises dangerously. What is the quantifiable risk to individuals when vehicle stop data from law enforcement with varying anonymization is published? Can we develop an effective risk and privacy algorithm to measure that risk? What protections, legal and otherwise, fail to keep re-identification at bay?
 
 ## Team Members
 |             |         |                 |
@@ -19,18 +18,14 @@ As time passes, more data gets released for general use. Consequently, the feasi
 | [Helen Webley-Brown](mailto:helenwb@mit.edu) | MIT | PhD Political Science|
 
 ## Methodology
-
-1. Locate currently available health datasets, focusing on mental health if possible. 
-Privacy Risk Assessments and Anonymity and De-Identification Assessments are often performed to express the privacy concerns we are interested in. 
-2. Consider the features available and their granularity. Different features are pre-identified to be more personal and riskier than others. This is a take on attribution analysis.
-3. Assess privacy risk through unique identifiers, rare or unusual attributes, or combinations of attributes that become within themselves PII. We can also look very closely for outliers, patterns, and atypical correlations, as these individuals are always at higher risk of re-identification. 
-4. Formally assign a risk score to the dataset even as 3rd-party onlookers.
-
+1. Data Collection: Locate readily available vehicle stop data from law enforcement agencies.
+2. Privacy Risk Assessment: Conduct Privacy Risk Assessments and Anonymity and De-Identification Assessments to evaluate the level of privacy risk associated with the published vehicle stop data. Identify sensitive attributes and assess the effectiveness of anonymization techniques used in the dataset.
+3. Feature Analysis: Analyze the granularity of features within the dataset. Identify and evaluate features that may pose higher privacy risks to individuals, such as unique identifiers, demographic information, and location data.
+4. Risk Score Assignment: Formally assign a risk score to the dataset, considering factors such as unique identifiers, rare attributes, and patterns that could lead to re-identification of individuals within the dataset.
+   
 ## Potential Impact
-
-- Shed light on the status quo of publicly available health data and dangers of publishing open-source health datasets, and the need for limited access even when published.
+- Shed light on the dangers of releasing open-source datasets without adequate privacy protections, emphasizing the need for caution and limited access to such sensitive information.
 - Design a risk assessment algorithm that considers both Privacy Risk Assessment and Anonymity And De-Identification Assessment methodologies to produce a concrete number on risk. 
 - Explore the implications of personal information breaches in various aspects of a person’s life.
-- Propose guidance on the choice of epsilon in Differential Privacy methods or enhance methods for anonymization (should time permit)
-Understand where legal protections fail and suggest ways to patch common loopholes if they exist.
-- Highlight variation in state-level policies to protect sensitive health data and how this interacts with inertia in federal-level policymaking. This may particularly interest reproductive health organizations following the 2022 Supreme Court ruling on *Dobbs v Jackson*. Post-Roe, there have been increased concerns about privacy protections for reproductive health data and how data brokers and law enforcement may use health data to prosecute individuals.
+- Propose guidance on enhancing privacy protections for vehicle stop data, including recommendations for improving anonymization techniques and implementing differential privacy methods. Address common loopholes in legal protections and suggest measures to mitigate re-identification risks.
+-  Highlight variations in state-level policies governing the protection of sensitive law enforcement data and their interaction with federal-level policymaking.
