@@ -28,4 +28,4 @@ As time passes, more data is released for general use. Consequently, the feasibi
 - Design a risk assessment algorithm that considers both Privacy Risk Assessment and Anonymity And De-Identification Assessment methodologies to produce a concrete number on risk. 
 - Explore the implications of personal information breaches in various aspects of a person’s life.
 - Propose guidance on enhancing privacy protections for vehicle stop data, including recommendations for improving anonymization techniques and implementing differential privacy methods. Address common loopholes in legal protections and suggest measures to mitigate re-identification risks.
--  Highlight variations in state-level policies governing the protection of sensitive law enforcement data and their interaction with federal-level policymaking.
+- Highlight variations in state-level policies governing the protection of sensitive law enforcement data and their interaction with federal-level policymaking.
