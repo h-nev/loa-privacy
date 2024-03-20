@@ -15,7 +15,6 @@ As time passes, more data is released for general use. Consequently, the feasibi
 | [Sudhan Chitgopkar](mailto:sudhanchitgopkar@g.harvard.edu) | Harvard | MS CSE |
 | [Abigail Kinaro](mailto:akinaro@g.harvard.edu) | Harvard | MS Data Science |
 | [Hope Neveux](mailto:hopeneveux@g.harvard.edu) | Harvard | MS Data Science |
-| [Helen Webley-Brown](mailto:helenwb@mit.edu) | MIT | PhD Political Science|
 
 ## Methodology
 1. Data Collection: Locate readily available vehicle stop data from law enforcement agencies.
