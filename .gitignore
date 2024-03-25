@@ -161,3 +161,9 @@ cython_debug/
 
 # ignore all datasets actually kept here locally
 data/*
+
+# all others
+share/
+bin/
+pyvenv.cfg
+.DS_Store
