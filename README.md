@@ -1,4 +1,4 @@
-# Risk Assessment of Publicly Available Health Datasets
+# Risk Assessment of Public Criminal Rescords
 
 ## Course Information
 
@@ -28,3 +28,24 @@ As time passes, more data is released for general use. Consequently, the feasibi
 - Explore the implications of personal information breaches in various aspects of a person’s life.
 - Propose guidance on enhancing privacy protections for vehicle stop data, including recommendations for improving anonymization techniques and implementing differential privacy methods. Address common loopholes in legal protections and suggest measures to mitigate re-identification risks.
 - Highlight variations in state-level policies governing the protection of sensitive law enforcement data and their interaction with federal-level policymaking.
+
+## Repo Structure
+
+```
+.
+  |-filescan.ipynb
+  |-requirements.txt
+  |-archive
+  |  |-MHCLD.ipynb
+  |  |-chicago.ipynb
+  |-Makefile
+  |-README.md
+  |-.gitignore
+  |-data
+  |  |-README.md
+  |  |-Parole pop subset.xlsx
+  |  |-Strategic_Subject_List_-_Historical_20240320.csv
+  |  |-chicagoParole.csv
+  |-tree.txt
+  |-pii.py
+```

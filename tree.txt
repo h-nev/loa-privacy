@@ -1,0 +1,16 @@
+.
+  |-filescan.ipynb
+  |-requirements.txt
+  |-archive
+  |  |-MHCLD.ipynb
+  |  |-chicago.ipynb
+  |-Makefile
+  |-README.md
+  |-.gitignore
+  |-data
+  |  |-README.md
+  |  |-Parole pop subset.xlsx
+  |  |-Strategic_Subject_List_-_Historical_20240320.csv
+  |  |-chicagoParole.csv
+  |-tree.txt
+  |-pii.py
