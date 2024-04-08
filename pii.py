@@ -136,6 +136,30 @@ class PIIScan():
         '''
         return self.df, self.matches
     
+    def getMatchSet(self):
+        '''
+        Getter for the auto-subset df of the possible matches.
+
+        Inputs:
+            - None
+
+        Returns:
+            - (pd.DataFrame): Subset data stored in DataFrame format
+        '''
+        return self.df[self.matches]
+    
+    def getMatchSet_Latex(self, rows = 5):
+        '''
+        Getter for the auto-subset df of the possible matches, but in latex format.
+
+        Inputs:
+            - None
+
+        Returns:
+            - (str): Latex tabular representation of the head of the data
+        '''
+        return print(self.df[self.matches].head(rows).to_latex(index = False))
+    
     def getNan(self):
         '''
         Returns the columns that have some number of NANs in them.
