@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 from pathlib import Path
+import sys
+import ast
 
 class PIIScan():
     def __init__(self, filePath: str, pii = ['Name', 'Date', 'Time', 'Address', 'Street', 'Residence', 'Country', 'County', 'State', 'District', 'Code', 'Number', 'Age', 'Ethnicity', 'Gender', 'Occupation', 'Status', 'DOB', 'Year', 'Month', 'Day']):
@@ -49,7 +51,7 @@ class PIIScan():
         print(self)
 
     def __str__(self):
-        return f' File: {self.fileName} \n File Type: {self.fileExtension} \n Features: {len(self.features)} \n Records: {len(self.df)} \n\n Possible PII Matches: {len(self.matches)} \n Hit Rate: {self.hitRate} \n\n Possible Matches: {self.matches} '
+        return f' File: {self.fileName} \n File Type: {self.fileExtension} \n Features: {len(self.features)} \n Records: {len(self.df)} \n\n Possible PII Matches: {len(self.matches)} \n Hit Rate: {self.hitRate} \n\n Possible Matches: {self.matches} \n Keyword List: {self.roots}'
 
     def _readFile(self):
         '''
@@ -172,3 +174,21 @@ class PIIScan():
         '''
 
         return self.nan[self.nan > 0]
+    
+if __name__ == "__main__":
+    # default len of arguments is 1
+    if len(sys.argv) > 3 or len(sys.argv) <= 1:
+        raise ValueError('Too many or too few arguments.')
+    
+    elif len(sys.argv) == 2:
+        # just pass the path to the file
+        pii = PIIScan(sys.argv[1])
+    
+    else:
+        rootList = ast.literal_eval(sys.argv[2])
+
+        # the path to the file and the custom root search
+        pii = PIIScan(sys.argv[1], rootList)
+
+    with open(f'reports/{pii.fileName}_report.txt', "w") as file:
+        file.write(pii.__str__())

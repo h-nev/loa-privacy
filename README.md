@@ -42,10 +42,93 @@ As time passes, more data is released for general use. Consequently, the feasibi
   |-README.md
   |-.gitignore
   |-data
+  |  |-NYPD_Arrest_Data__Year_to_Date__20240410.csv
   |  |-README.md
   |  |-Parole pop subset.xlsx
   |  |-Strategic_Subject_List_-_Historical_20240320.csv
   |  |-chicagoParole.csv
   |-tree.txt
   |-pii.py
+  |-reports
+  |  |-chicagoParole_report.txt
+```
+
+## Running the File Auto-Scan Method
+
+### 0. Enviornment Setup
+
+To make sure everything runs, make sure that all the requirements are installed. If you are using a python venv, make sure this is activated first. Then run:
+
+```
+pip install -r requirements.txt
+```
+
+### 1. Save CSV or XLSX Files Locally 
+
+You can say the data anywhere locally that makes sense. In this example, we save the `chicagoParole.csv` file to the `data` folder.
+
+>CAUTION:
+>
+> Please **do not** commit any csv or xlsx files to the repo.
+
+### 2. Run the `pii.py` Script
+
+We can run the script two ways. The first option will use the default options for the roots, which will look for any features that contain any of the following words:
+
+- Name
+- Date
+- Time
+- Address
+- Street
+- Residence
+- Country
+- County
+- State
+- District
+- Code
+- Number
+- Age
+- Ethnicity
+- Gender
+- Occupation
+- Status
+- DOB
+- Year
+- Month
+- Day
+
+When running either of the options below, the report will both print to the console *as well as make a txt file containing the report located in the `reports` folder*. 
+
+#### Option 1: Default Roots
+
+```{python}
+>> python pii.py "data/chicagoParole.csv"
+
+ File: chicagoParole 
+ File Type: csv 
+ Features: 30 
+ Records: 15630 
+
+ Possible PII Matches: 12 
+ Hit Rate: 0.4 
+
+ Possible Matches: ['Age', 'County of Residence', 'Current Admission Date', 'Custody Date', 'Date of Birth', 'MSR/Parole Date', 'Name', 'Projected Discharge Date', 'Residence Zip Code', 'Sentence Date', 'Sentencing County', 'Veteran Status'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
+```
+
+#### Option 2: Custom Roots
+
+```{python}
+>> python pii.py "data/chicagoParole.csv" "['name', 'date']"
+
+ File: chicagoParole 
+ File Type: csv 
+ Features: 30 
+ Records: 15630 
+
+ Possible PII Matches: 7 
+ Hit Rate: 0.23 
+
+ Possible Matches: ['Current Admission Date', 'Custody Date', 'Date of Birth', 'MSR/Parole Date', 'Name', 'Projected Discharge Date', 'Sentence Date'] 
+ Keyword List: ['name', 'date']
 ```

@@ -1,0 +1,10 @@
+ File: chicagoParole 
+ File Type: csv 
+ Features: 30 
+ Records: 15630 
+
+ Possible PII Matches: 12 
+ Hit Rate: 0.4 
+
+ Possible Matches: ['Age', 'County of Residence', 'Current Admission Date', 'Custody Date', 'Date of Birth', 'MSR/Parole Date', 'Name', 'Projected Discharge Date', 'Residence Zip Code', 'Sentence Date', 'Sentencing County', 'Veteran Status'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']

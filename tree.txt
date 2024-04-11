@@ -8,9 +8,12 @@
   |-README.md
   |-.gitignore
   |-data
+  |  |-NYPD_Arrest_Data__Year_to_Date__20240410.csv
   |  |-README.md
   |  |-Parole pop subset.xlsx
   |  |-Strategic_Subject_List_-_Historical_20240320.csv
   |  |-chicagoParole.csv
   |-tree.txt
   |-pii.py
+  |-reports
+  |  |-chicagoParole_report.txt
