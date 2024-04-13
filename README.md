@@ -29,11 +29,20 @@ As time passes, more data is released for general use. Consequently, the feasibi
 - Propose guidance on enhancing privacy protections for vehicle stop data, including recommendations for improving anonymization techniques and implementing differential privacy methods. Address common loopholes in legal protections and suggest measures to mitigate re-identification risks.
 - Highlight variations in state-level policies governing the protection of sensitive law enforcement data and their interaction with federal-level policymaking.
 
+## Datasets
+
+### In Use
+
+- [Illinois Parole](https://corrections.il.readydata.org/parole-dashboard)
+  - [Parole Registary](https://prb.illinois.gov/content/dam/soi/en/web/prb/documents/parole-registry/Regparda.pdf)
+- [NYC Arrests](https://data.cityofnewyork.us/Public-Safety/NYPD-Arrest-Data-Year-to-Date-/uip8-fykc/data_preview)
+- [Dallas Arrests](https://www.dallasopendata.com/Public-Safety/Police-Arrests/sdr7-6v3j/about_data)
+
+
 ## Repo Structure
 
 ```
 .
-  |-filescan.ipynb
   |-requirements.txt
   |-archive
   |  |-MHCLD.ipynb
@@ -41,16 +50,19 @@ As time passes, more data is released for general use. Consequently, the feasibi
   |-Makefile
   |-README.md
   |-.gitignore
+  |-dev
+  |  |-filescan.ipynb
+  |  |-readpdf.ipynb
   |-data
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410.csv
+  |  |-Illinois_parole_reg.pdf
   |  |-README.md
   |  |-Parole pop subset.xlsx
-  |  |-Strategic_Subject_List_-_Historical_20240320.csv
-  |  |-chicagoParole.csv
   |-tree.txt
   |-pii.py
   |-reports
   |  |-chicagoParole_report.txt
+  |  |-NYPD_Arrest_Data__Year_to_Date__20240410_report.txt
 ```
 
 ## Running the File Auto-Scan Method

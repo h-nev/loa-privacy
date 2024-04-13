@@ -1,19 +1,25 @@
 .
-  |-filescan.ipynb
   |-requirements.txt
   |-archive
   |  |-MHCLD.ipynb
   |  |-chicago.ipynb
   |-Makefile
+  |-__pycache__
+  |  |-pii.cpython-312.pyc
   |-README.md
   |-.gitignore
+  |-dev
+  |  |-filescan.ipynb
+  |  |-readpdf.ipynb
   |-data
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410.csv
+  |  |-Illinois_parole_reg.pdf
   |  |-README.md
   |  |-Parole pop subset.xlsx
-  |  |-Strategic_Subject_List_-_Historical_20240320.csv
-  |  |-chicagoParole.csv
+  |  |-DallasArrests.csv
   |-tree.txt
   |-pii.py
   |-reports
   |  |-chicagoParole_report.txt
+  |  |-NYPD_Arrest_Data__Year_to_Date__20240410_report.txt
+  |  |-DallasArrests_report.txt

@@ -121,9 +121,37 @@ class PIIScan():
                 # the roots matched, so the column(s) have '-' as a delimiter
                 suspected_pii.append(col)
 
+            elif len(set(self.detectCC(col)).intersection(self.roots)) > 0:
+                # we may have a camel case situation
+                suspected_pii.append(col)
+
         # get rid of any duplicates we've amassed and save it
         self.matches = list(np.unique(suspected_pii))
         self.hitRate = round(len(suspected_pii) / len(self.features), 2)
+
+    def detectCC(self, str):
+        '''
+        Adapted from GeeksForGeeks article Python | Split CamelCase string to individual strings.
+
+        Inputs:
+            - (str) str: The column name we're looking at for possible PII to see if it's CamelCase
+
+        Returns:
+            - (list: str): List of the words we found based on splitting up via CamelCase
+        '''
+        # set the word list with the very first letter in the string
+        words = [[str[0]]]
+    
+        # looks at the rest of the characters
+        for c in str[1:]:
+            if words[-1][-1].islower() and c.isupper():
+                words.append(list(c.lower()))
+
+            else:
+                words[-1].append(c.lower())
+    
+        # re-builds the words into strings
+        return [''.join(word) for word in words]
 
     def getData(self):
         '''

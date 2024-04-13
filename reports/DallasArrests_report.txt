@@ -1,0 +1,10 @@
+ File: DallasArrests 
+ File Type: csv 
+ Features: 65 
+ Records: 105161 
+
+ Possible PII Matches: 17 
+ Hit Rate: 0.26 
+
+ Possible Matches: ['Age', 'AgeAtArrestTime', 'AliasName', 'ArArrestDate', 'ArArrestTime', 'ArBkDate', 'ArLAddress', 'ArLCounty', 'ArLDistrict', 'ArState', 'ArrestNumber', 'ArresteeName', 'CFS_Number', 'JobSchStatus', 'NickName', 'Occupation', 'UpZDate'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
