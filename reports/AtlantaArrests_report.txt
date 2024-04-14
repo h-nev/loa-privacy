@@ -1,0 +1,10 @@
+ File: AtlantaArrests 
+ File Type: csv 
+ Features: 22 
+ Records: 366824 
+
+ Possible PII Matches: 10 
+ Hit Rate: 0.45 
+
+ Possible Matches: ['Apartment Number', 'Day Number', 'Day Occurred', 'NIBRS Code', 'Occur Date', 'Occur Time', 'Possible Date', 'Possible Time', 'Report Date', 'Report Number'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']

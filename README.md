@@ -50,6 +50,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
 - [Seattle Arrests](https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data)
 - [Los Angeles Arrests](https://data.lacity.org/Public-Safety/Arrest-Data-from-2020-to-Present/amvf-fr72/about_data)
 - [San Diego Arrests](https://data.sandiegodata.org/dataset/arjis-org-crime-victims-pra/)
+- [Atlanta Arrests](https://opendata.atlantapd.org/)
 
 ## Repo Structure
 
@@ -76,6 +77,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
   |  |-Parole pop subset.xlsx
   |  |-LAArrests.csv
   |  |-DallasArrests.csv
+  |  |-AtlantaArrests.csv
   |  |-SanDiegoArrests.csv
   |-tree.txt
   |-pii.py
@@ -83,6 +85,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
   |  |-chicagoParole_report.txt
   |  |-Parole pop subset_report.txt
   |  |-LAArrests_report.txt
+  |  |-AtlantaArrests_report.txt
   |  |-SanDiegoArrests_report.txt
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410_report.txt
   |  |-DallasArrests_report.txt

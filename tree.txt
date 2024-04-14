@@ -20,6 +20,7 @@
   |  |-Parole pop subset.xlsx
   |  |-LAArrests.csv
   |  |-DallasArrests.csv
+  |  |-AtlantaArrests.csv
   |  |-SanDiegoArrests.csv
   |-tree.txt
   |-pii.py
@@ -27,6 +28,7 @@
   |  |-chicagoParole_report.txt
   |  |-Parole pop subset_report.txt
   |  |-LAArrests_report.txt
+  |  |-AtlantaArrests_report.txt
   |  |-SanDiegoArrests_report.txt
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410_report.txt
   |  |-DallasArrests_report.txt
