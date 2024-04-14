@@ -37,7 +37,9 @@ As time passes, more data is released for general use. Consequently, the feasibi
   - [Parole Registary](https://prb.illinois.gov/content/dam/soi/en/web/prb/documents/parole-registry/Regparda.pdf)
 - [NYC Arrests](https://data.cityofnewyork.us/Public-Safety/NYPD-Arrest-Data-Year-to-Date-/uip8-fykc/data_preview)
 - [Dallas Arrests](https://www.dallasopendata.com/Public-Safety/Police-Arrests/sdr7-6v3j/about_data)
-
+- [Seattle Arrests](https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data)
+- [Los Angeles Arrests](https://data.lacity.org/Public-Safety/Arrest-Data-from-2020-to-Present/amvf-fr72/about_data)
+- [San Diego Arrests](https://data.sandiegodata.org/dataset/arjis-org-crime-victims-pra/)
 
 ## Repo Structure
 
@@ -48,21 +50,33 @@ As time passes, more data is released for general use. Consequently, the feasibi
   |  |-MHCLD.ipynb
   |  |-chicago.ipynb
   |-Makefile
+  |-runall.sh
+  |-__pycache__
+  |  |-pii.cpython-312.pyc
   |-README.md
   |-.gitignore
   |-dev
   |  |-filescan.ipynb
   |  |-readpdf.ipynb
   |-data
+  |  |-SeattleArrests.csv
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410.csv
   |  |-Illinois_parole_reg.pdf
   |  |-README.md
   |  |-Parole pop subset.xlsx
+  |  |-LAArrests.csv
+  |  |-DallasArrests.csv
+  |  |-SanDiegoArrests.csv
   |-tree.txt
   |-pii.py
   |-reports
   |  |-chicagoParole_report.txt
+  |  |-Parole pop subset_report.txt
+  |  |-LAArrests_report.txt
+  |  |-SanDiegoArrests_report.txt
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410_report.txt
+  |  |-DallasArrests_report.txt
+  |  |-SeattleArrests_report.txt
 ```
 
 ## Running the File Auto-Scan Method

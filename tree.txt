@@ -4,6 +4,7 @@
   |  |-MHCLD.ipynb
   |  |-chicago.ipynb
   |-Makefile
+  |-runall.sh
   |-__pycache__
   |  |-pii.cpython-312.pyc
   |-README.md
@@ -12,14 +13,21 @@
   |  |-filescan.ipynb
   |  |-readpdf.ipynb
   |-data
+  |  |-SeattleArrests.csv
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410.csv
   |  |-Illinois_parole_reg.pdf
   |  |-README.md
   |  |-Parole pop subset.xlsx
+  |  |-LAArrests.csv
   |  |-DallasArrests.csv
+  |  |-SanDiegoArrests.csv
   |-tree.txt
   |-pii.py
   |-reports
   |  |-chicagoParole_report.txt
+  |  |-Parole pop subset_report.txt
+  |  |-LAArrests_report.txt
+  |  |-SanDiegoArrests_report.txt
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410_report.txt
   |  |-DallasArrests_report.txt
+  |  |-SeattleArrests_report.txt

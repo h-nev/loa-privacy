@@ -1,0 +1,10 @@
+ File: SanDiegoArrests 
+ File Type: csv 
+ Features: 19 
+ Records: 676244 
+
+ Possible PII Matches: 2 
+ Hit Rate: 0.11 
+
+ Possible Matches: ['age', 'year'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
