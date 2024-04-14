@@ -1,5 +1,17 @@
 # Risk Assessment of Public Criminal Rescords
 
+## Table of Contents
+
+- [Course Information](#course-information)
+- [Research Question](#research-question)
+- [Team Members](#team-members)
+- [Methodology](#methodology)
+- [Potential Impact](#potential-impact)
+- [Datasets](#datasets)
+- [Repo Structure](#repo-structure)
+- [Running the File Auto-Scan Method](#running-the-file-auto-scan-method)
+- [Running All Data Files at Once](#running-all-data-files-at-once)
+
 ## Course Information
 
 *DPI 617: Law, Order, and Algorithms*
@@ -29,9 +41,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
 - Propose guidance on enhancing privacy protections for vehicle stop data, including recommendations for improving anonymization techniques and implementing differential privacy methods. Address common loopholes in legal protections and suggest measures to mitigate re-identification risks.
 - Highlight variations in state-level policies governing the protection of sensitive law enforcement data and their interaction with federal-level policymaking.
 
-## Datasets
-
-### In Use
+## Datasets & Supplemental Data
 
 - [Illinois Parole](https://corrections.il.readydata.org/parole-dashboard)
   - [Parole Registary](https://prb.illinois.gov/content/dam/soi/en/web/prb/documents/parole-registry/Regparda.pdf)
@@ -158,3 +168,12 @@ When running either of the options below, the report will both print to the cons
  Possible Matches: ['Current Admission Date', 'Custody Date', 'Date of Birth', 'MSR/Parole Date', 'Name', 'Projected Discharge Date', 'Sentence Date'] 
  Keyword List: ['name', 'date']
 ```
+## Running all Data Files at Once
+
+With a lot of datasets or chnages to the `pii.py` method, it would be tedious to do it all by hand. To run the default `pii.py` (using the default roots / keywords), run the following in terminal.
+
+```{bash}
+bash runall.sh
+```
+
+The output for each is directed to the `reports` folder as normal.  
