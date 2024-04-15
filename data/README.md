@@ -6,6 +6,4 @@ This folder appears empty on GitHub, as it is just a common placeholder for data
 
 ## Datasets
 
-The datasets we used are from:
-
-- [The Stanford Open Policing Project] (https://openpolicing.stanford.edu/data/)
+The datasets (with links) can be found on the root `README.md`.
