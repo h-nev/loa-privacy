@@ -19,7 +19,7 @@
 *Spring 2024*
 
 ## Research Question
-As time passes, more data is released for general use. Consequently, the feasibility of malicious actors deanonymizing aggregated data rises dangerously. What is the quantifiable risk to individuals when vehicle stop data from law enforcement with varying anonymization is published? Can we develop an effective risk and privacy algorithm to measure that risk? What protections, legal and otherwise, fail to keep re-identification at bay?
+As time passes, more data is released for general use. Consequently, the feasibility of malicious actors deanonymizing aggregated data rises dangerously. How can crime and arrest datasets be effectively anonymized and published online to safeguard individuals' privacy while maintaining transparency and accountability?
 
 ## Team Members
 |             |         |                 |
@@ -29,17 +29,15 @@ As time passes, more data is released for general use. Consequently, the feasibi
 | [Hope Neveux](mailto:hopeneveux@g.harvard.edu) | Harvard | MS Data Science |
 
 ## Methodology
-1. Data Collection: Locate readily available vehicle stop data from law enforcement agencies.
-2. Privacy Risk Assessment: Conduct Privacy Risk Assessments and Anonymity and De-Identification Assessments to evaluate the level of privacy risk associated with the published vehicle stop data. Identify sensitive attributes and assess the effectiveness of anonymization techniques used in the dataset.
-3. Feature Analysis: Analyze the granularity of features within the dataset. Identify and evaluate features that may pose higher privacy risks to individuals, such as unique identifiers, demographic information, and location data.
-4. Risk Score Assignment: Formally assign a risk score to the dataset, considering factors such as unique identifiers, rare attributes, and patterns that could lead to re-identification of individuals within the dataset.
+1. Data Collection: Identify and locate crime and arrest datasets from various United States cities.
+2. Identification of Identifiable Data: Create a checklist of the identifiable data elements and develop a script or program to systematically scan each dataset for the presence of these data elements.
+3. Data Analysis and Reporting: Utilize the script to analyze the datasets, identify instances where the identifiable data elements are present, and generate a summarized report detailing the findings. 
+4. Recommendations: Provide recommendations based on the analysis findings and the developed privacy checklist.
    
 ## Potential Impact
-- Shed light on the dangers of releasing open-source datasets without adequate privacy protections, emphasizing the need for caution and limited access to such sensitive information.
-- Design a risk assessment algorithm that considers both Privacy Risk Assessment and Anonymity And De-Identification Assessment methodologies to produce a concrete number on risk. 
-- Explore the implications of personal information breaches in various aspects of a person’s life.
-- Propose guidance on enhancing privacy protections for vehicle stop data, including recommendations for improving anonymization techniques and implementing differential privacy methods. Address common loopholes in legal protections and suggest measures to mitigate re-identification risks.
-- Highlight variations in state-level policies governing the protection of sensitive law enforcement data and their interaction with federal-level policymaking.
+- Raise awareness about privacy risks for publishing crime and arrest datasets online. The developed checklist offers practical guidelines for data publishers and policymakers to ensure individuals' privacy rights are respected when sharing sensitive information.
+- Promotes transparency and accountability in data-sharing practices by providing insights into identifiable data types in crime and arrest datasets. Stakeholders, including law enforcement agencies, government bodies, and advocacy groups, can use this information to advocate for responsible data-sharing policies and ensure that individuals' privacy is upheld.
+-  Raises important ethical considerations surrounding the collection, use, and dissemination of sensitive personal information, particularly in the context of law enforcement data.
 
 ## Datasets & Supplemental Data
 
@@ -102,9 +100,9 @@ As time passes, more data is released for general use. Consequently, the feasibi
 
 ## Running the File Auto-Scan Method
 
-### 0. Enviornment Setup
+### 0. Environment Setup
 
-To make sure everything runs, make sure that all the requirements are installed. If you are using a python venv, make sure this is activated first. Then run:
+To ensure everything runs, ensure all the requirements are installed. If you are using a Python venv, make sure this is activated first. Then run:
 
 ```
 pip install -r requirements.txt
@@ -112,7 +110,7 @@ pip install -r requirements.txt
 
 ### 1. Save CSV or XLSX Files Locally 
 
-You can say the data anywhere locally that makes sense. In this example, we save the `chicagoParole.csv` file to the `data` folder.
+You can say the data anywhere locally, which makes sense. In this example, we save the `chicagoParole.csv` file to the `data` folder.
 
 >CAUTION:
 >
@@ -120,7 +118,7 @@ You can say the data anywhere locally that makes sense. In this example, we save
 
 ### 2. Run the `pii.py` Script
 
-We can run the script two ways. The first option will use the default options for the roots, which will look for any features that contain any of the following words:
+We can run the script in two ways. The first option will use the default options for the roots, which will look for any features that contain any of the following words:
 
 - Name
 - Date
@@ -181,7 +179,7 @@ When running either of the options below, the report will both print to the cons
 ```
 ## Running all Data Files at Once
 
-With a lot of datasets or chnages to the `pii.py` method, it would be tedious to do it all by hand. To run the default `pii.py` (using the default roots / keywords), run the following in terminal.
+With a lot of datasets or changes to the `pii.py` method, it would be tedious to do it all by hand. To run the default `pii.py` (using the default roots / keywords), run the following in the terminal.
 
 ```{bash}
 bash runall.sh
