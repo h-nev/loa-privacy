@@ -1,0 +1,10 @@
+ File: Hartford Police Incident Reports 
+ File Type: csv 
+ Features: 13 
+ Records: 10 
+
+ Possible PII Matches: 6 
+ Hit Rate: 0.46 
+
+ Possible Matches: ['Address', 'Case Number', 'Date', 'Time', 'UCR 1 Code', 'UCR 2 Code'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']

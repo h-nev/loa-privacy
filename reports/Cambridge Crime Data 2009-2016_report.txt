@@ -1,0 +1,10 @@
+ File: Cambridge Crime Data 2009-2016 
+ File Type: csv 
+ Features: 7 
+ Records: 56014 
+
+ Possible PII Matches: 3 
+ Hit Rate: 0.43 
+
+ Possible Matches: ['Crime Date Time', 'Date of Report', 'File Number'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']

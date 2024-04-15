@@ -1,0 +1,10 @@
+ File: tn_nashville_2020_04_01 
+ File Type: csv 
+ Features: 42 
+ Records: 3092351 
+
+ Possible PII Matches: 7 
+ Hit Rate: 0.17 
+
+ Possible Matches: ['date', 'raw_misd_state_citation_issued', 'raw_row_number', 'raw_suspect_ethnicity', 'subject_age', 'time', 'vehicle_registration_state'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']

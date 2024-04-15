@@ -1,0 +1,10 @@
+ File: Crime_Detroit_Block_2016 
+ File Type: csv 
+ Features: 6 
+ Records: 13522 
+
+ Possible PII Matches: 0 
+ Hit Rate: 0.0 
+
+ Possible Matches: [] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']

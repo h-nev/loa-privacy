@@ -1,0 +1,10 @@
+ File: KCPD_Crime_Data_2011_Final 
+ File Type: csv 
+ Features: 24 
+ Records: 128514 
+
+ Possible PII Matches: 9 
+ Hit Rate: 0.38 
+
+ Possible Matches: ['Address', 'Age', 'From Time', 'From_Date', 'Reported Time', 'Reported_Date', 'To Time', 'To_Date', 'Zip Code'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
