@@ -55,7 +55,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
 - [Kansas City Crime](https://data.world/data-society/kansas-city-crime-data)
 - [Louisville Metro Crime](https://catalog.data.gov/dataset/louisville-metro-ky-crime-data-2022)
 - [Detroit Crime](https://data.world/johnsnowlabs/detroit-all-crime-incidents)
-- [Nashville](https://openpolicing.stanford.edu/data/)
+- [Nashville Stop Data](https://openpolicing.stanford.edu/data/)
 
 
 ## Repo Structure
