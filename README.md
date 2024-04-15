@@ -51,6 +51,14 @@ As time passes, more data is released for general use. Consequently, the feasibi
 - [Los Angeles Arrests](https://data.lacity.org/Public-Safety/Arrest-Data-from-2020-to-Present/amvf-fr72/about_data)
 - [San Diego Arrests](https://data.sandiegodata.org/dataset/arjis-org-crime-victims-pra/)
 - [Atlanta Arrests](https://opendata.atlantapd.org/)
+- [Cambridge Crime](https://data.world/data-society/cambridge-crime-data-2009-2016)
+- [Baltimore Crime](https://data.world/baltimore/baltimore-crime-data)
+- [Hatford Crime](https://data.world/johnsnowlabs/hartford-police-incident-reports)
+- [Kansas City Crime](https://data.world/data-society/kansas-city-crime-data)
+- [Louisville Metro Crime](https://catalog.data.gov/dataset/louisville-metro-ky-crime-data-2022)
+- [Detroit Crime](https://data.world/johnsnowlabs/detroit-all-crime-incidents)
+- [Nashville](https://openpolicing.stanford.edu/data/)
+
 
 ## Repo Structure
 
