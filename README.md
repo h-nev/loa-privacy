@@ -1,4 +1,4 @@
-# Risk Assessment of Public Criminal Rescords
+# Risk Assessment of Public Criminal Records
 
 ## Table of Contents
 
