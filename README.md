@@ -56,6 +56,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
 - [Louisville Metro Crime](https://catalog.data.gov/dataset/louisville-metro-ky-crime-data-2022)
 - [Detroit Crime](https://data.world/johnsnowlabs/detroit-all-crime-incidents)
 - [Nashville Stop Data](https://openpolicing.stanford.edu/data/)
+- [DC Stops](https://mpdc.dc.gov/node/1310236)
 - [Baltimore Arrests](https://data.baltimorecity.gov/datasets/619ec10c14b346f784a5a07bad4c43cd_0/explore?location=39.301657%2C-76.615850%2C12.19)
 - [Phoenix Arrests](https://www.phoenixopendata.com/dataset/arrests/resource/1eaee7f1-ccd0-4057-af55-e5749a934258)
 - [Philadelphia Stops](https://opendataphilly.org/datasets/vehicle-pedestrian-investigations/)
