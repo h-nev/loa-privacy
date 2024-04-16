@@ -1,0 +1,10 @@
+ File: Philly_Stops 
+ File Type: csv 
+ Features: 30 
+ Records: 127219 
+
+ Possible PII Matches: 5 
+ Hit Rate: 0.17 
+
+ Possible Matches: ['age', 'gender', 'mvc_code', 'mvc_code_sec', 'mvc_code_sec_reason'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']

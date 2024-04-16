@@ -1,0 +1,10 @@
+ File: Denver_Stops 
+ File Type: csv 
+ Features: 14 
+ Records: 1063691 
+
+ Possible PII Matches: 5 
+ Hit Rate: 0.36 
+
+ Possible Matches: ['ADDRESS', 'DISTRICT_ID', 'MASTER_INCIDENT_NUMBER', 'NEIGHBORHOOD_NAME', 'TIME_PHONEPICKUP'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']

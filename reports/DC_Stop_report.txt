@@ -1,0 +1,10 @@
+ File: DC_Stop 
+ File Type: csv 
+ Features: 11 
+ Records: 23325 
+
+ Possible PII Matches: 6 
+ Hit Rate: 0.55 
+
+ Possible Matches: ['Age', 'Block Address', 'Incident Location District', 'Report_taken_date_EST', 'Subject_Ethnicity', 'Year'] 
+ Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
