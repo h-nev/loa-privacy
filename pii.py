@@ -5,7 +5,7 @@ import sys
 import ast
 
 class PIIScan():
-    def __init__(self, filePath: str, pii = ['Name', 'Date', 'Time', 'Address', 'Street', 'Residence', 'Country', 'County', 'State', 'District', 'Code', 'Number', 'Age', 'Ethnicity', 'Gender', 'Occupation', 'Status', 'DOB', 'Year', 'Month', 'Day']):
+    def __init__(self, filePath: str, pii = ['Name', 'Date', 'SSN', 'Time', 'Address', 'Street', 'Residence', 'Country', 'County', 'State', 'District', 'Code', 'Number', 'Age', 'Ethnicity', 'Gender', 'Occupation', 'Status', 'DOB', 'Year', 'Month', 'Day']):
         '''
         Reads a dataset (csv or xlsx supported) given a filepath, saves it and the metadata, and checks for partial or complete PII matches.
 
@@ -52,7 +52,7 @@ class PIIScan():
         print(self)
 
     def __str__(self):
-        return f' File: {self.fileName} \n File Type: {self.fileExtension} \n\n Features: {len(self.features)} \n Features with Missingness: {self.featsMissing.shape[0]} \n Records: {len(self.df)} \n\n Raw Hit Rate: {self.hitRate} \n Adjusted Hit Rate: {self.adjHR} \n\n Possible PII Matches: {len(self.matches)} \n Possible Matches: {self.matches} \n\n Keyword Hit Rate: {self.kwHR} \n Keyword Matches: {self.kwMatches}'
+        return f' File: {self.fileName} \n File Type: {self.fileExtension} \n\n Features: {len(self.features)} \n Features with Missingness: {self.featsMissing.shape[0]} \n Records: {len(self.df)} \n\n Raw Hit Rate: {self.hitRate} \n\n Possible PII Matches: {len(self.matches)} \n Possible Matches: {self.matches} \n\n Keyword Hit Rate: {self.kwHR} \n Keyword Matches: {self.kwMatches}'
 
     def _readFile(self):
         '''
@@ -146,11 +146,8 @@ class PIIScan():
         self.matches = list(np.unique(suspected_pii))
         self.kwMatches = kwType
 
-        # prop of columns had possible PII
         self.hitRate = round(len(suspected_pii) / len(self.features), 2)
-        # prop of columns WIHTOUT MISSINGNESS that have possible PII
-        self.adjHR = round(len(suspected_pii) / (len(self.features) - self.featsMissing.shape[0]), 2)
-        # prop of keywords that were found in the dataset PII
+        # self.adjHR = round(len(suspected_pii) / len(set(suspected_pii) - set(self.featsMissing)), 2)
         self.kwHR = round(len(kwType) / len(self.roots), 2)
 
     def _detectCC(self, str):

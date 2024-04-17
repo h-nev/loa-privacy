@@ -6,10 +6,9 @@
  Records: 366824 
 
  Raw Hit Rate: 0.45 
- Adjusted Hit Rate: 0.83 
 
  Possible PII Matches: 10 
  Possible Matches: ['Apartment Number', 'Day Number', 'Day Occurred', 'NIBRS Code', 'Occur Date', 'Occur Time', 'Possible Date', 'Possible Time', 'Report Date', 'Report Number'] 
 
- Keyword Hit Rate: 0.24 
+ Keyword Hit Rate: 0.23 
  Keyword Matches: ['code', 'date', 'day', 'number', 'time']

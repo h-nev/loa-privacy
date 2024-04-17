@@ -6,7 +6,6 @@
  Records: 226872 
 
  Raw Hit Rate: 0.21 
- Adjusted Hit Rate: 0.25 
 
  Possible PII Matches: 4 
  Possible Matches: ['AGE_GROUP', 'ARREST_DATE', 'JURISDICTION_CODE', 'LAW_CODE'] 
