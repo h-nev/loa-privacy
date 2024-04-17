@@ -25,11 +25,24 @@
   |-tree.txt
   |-pii.py
   |-reports
+  |  |-Detroit All Crime Incidents_report.txt
+  |  |-Hartford Police Incident Reports_report.txt
+  |  |-Baltimore_Arrests_report.txt
+  |  |-Phoenix_Arrests_report.txt
+  |  |-tn_nashville_2020_04_01_report.txt
+  |  |-Philly_Stops_report.txt
   |  |-chicagoParole_report.txt
   |  |-Parole pop subset_report.txt
   |  |-LAArrests_report.txt
+  |  |-Cambridge Crime Data 2009-2016_report.txt
+  |  |-BPD_Part_1_Victim_Based_Crime_Data_report.txt
+  |  |-DC_Stop_report.txt
   |  |-AtlantaArrests_report.txt
   |  |-SanDiegoArrests_report.txt
+  |  |-Denver_Stops_report.txt
   |  |-NYPD_Arrest_Data__Year_to_Date__20240410_report.txt
+  |  |-Louisville_Metro_KY_-_Crime_Data_2022_report.txt
+  |  |-KCPD_Crime_Data_2011_Final_report.txt
   |  |-DallasArrests_report.txt
+  |  |-Tucson_Arrests_report.txt
   |  |-SeattleArrests_report.txt
