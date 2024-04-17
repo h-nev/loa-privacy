@@ -1,10 +1,14 @@
  File: Louisville_Metro_KY_-_Crime_Data_2022 
  File Type: csv 
+
  Features: 16 
+ Features with Missingness: 7 
  Records: 71506 
 
- Possible PII Matches: 6 
- Hit Rate: 0.38 
+ Raw Hit Rate: 0.38 
 
+ Possible PII Matches: 6 
  Possible Matches: ['BLOCK_ADDRESS', 'DATE_OCCURED', 'DATE_REPORTED', 'INCIDENT_NUMBER', 'NIBRS_CODE', 'ZIP_CODE'] 
- Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
+
+ Keyword Hit Rate: 0.18 
+ Keyword Matches: ['address', 'code', 'date', 'number']

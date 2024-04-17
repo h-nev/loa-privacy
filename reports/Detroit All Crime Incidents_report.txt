@@ -1,10 +1,14 @@
  File: Detroit All Crime Incidents 
  File Type: csv 
+
  Features: 18 
+ Features with Missingness: 0 
  Records: 10 
 
- Possible PII Matches: 8 
- Hit Rate: 0.44 
+ Raw Hit Rate: 0.44 
 
+ Possible PII Matches: 8 
  Possible Matches: ['Address', 'Council District', 'Day of Week', 'IBR Report Date', 'Incident Date and Time', 'Precinct Number', 'Report Number', 'State Offense Code'] 
- Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
+
+ Keyword Hit Rate: 0.36 
+ Keyword Matches: ['address', 'code', 'date', 'day', 'district', 'number', 'state', 'time']
