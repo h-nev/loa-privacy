@@ -38,6 +38,7 @@ class PIIScan():
         # get and save the data
         self._readFile()
         self.features = list(self.df.columns)
+        self.featsMissing = self.getNan()
 
         # save the lowercase version of roots passed in or used from default
         self.roots = [root.lower() for root in pii]
@@ -51,7 +52,7 @@ class PIIScan():
         print(self)
 
     def __str__(self):
-        return f' File: {self.fileName} \n File Type: {self.fileExtension} \n Features: {len(self.features)} \n Records: {len(self.df)} \n\n Possible PII Matches: {len(self.matches)} \n Hit Rate: {self.hitRate} \n\n Possible Matches: {self.matches} \n Keyword List: {self.roots}'
+        return f' File: {self.fileName} \n File Type: {self.fileExtension} \n\n Features: {len(self.features)} \n Features with Missingness: {self.featsMissing.shape[0]} \n Records: {len(self.df)} \n\n Raw Hit Rate: {self.hitRate} \n Adjusted Hit Rate: {self.adjHR} \n\n Possible PII Matches: {len(self.matches)} \n Possible Matches: {self.matches} \n\n Keyword Hit Rate: {self.kwHR} \n Keyword Matches: {self.kwMatches}'
 
     def _readFile(self):
         '''
@@ -97,39 +98,62 @@ class PIIScan():
 
         Attributes Defined Here:
             - (list: str) matches: List of unique column (feature) names that were found to be partial or complete matches to something in the PII list
-            - (float) hitRate: Proportion of possibly PII columns in the dataset. Rounded to 2 decimal places)
+            - (float) hitRate: Proportion of possibly PII columns in the dataset. Rounded to 2 decimal places
+            - (float) kwHR: The hit rate relative to the keywords, rounded to 2 decimal places
         '''
                 
-        # container for the hit columns
+        # container for the hit columns and the keyword we matched
         suspected_pii = []
+        kwType = []
 
         # check each of the columns against our pii_roots (the default or a custom one)
         for col in self.features:
             # make sure everything is the same regardless of casing
             lowercol = col.lower()
 
+            # try to break the feature name in different ways
+            spaceSplit = set(lowercol.split(' ')).intersection(self.roots)
+            underSplit = set(lowercol.split('_')).intersection(self.roots)
+            dashSplit = set(lowercol.split('-')).intersection(self.roots)
+            camelSplit = set(self._detectCC(col)).intersection(self.roots)
+
             # check the lower case versions, but append the normal column
-            if len(set(lowercol.split(' ')).intersection(self.roots)) > 0:
+            if len(spaceSplit) > 0:
                 # the roots matched, so the column(s) have a space as a delimiter
                 suspected_pii.append(col)
+                kwType.extend(list(spaceSplit))
 
-            elif len(set(lowercol.split('_')).intersection(self.roots)) > 0:
+            elif len(underSplit) > 0:
                 # the roots matched, so the column(s) have '_' as a delimiter
                 suspected_pii.append(col)
+                kwType.extend(list(underSplit))
 
-            elif len(set(lowercol.split('-')).intersection(self.roots)) > 0:
+            elif len(dashSplit) > 0:
                 # the roots matched, so the column(s) have '-' as a delimiter
                 suspected_pii.append(col)
+                kwType.extend(list(dashSplit))
 
-            elif len(set(self.detectCC(col)).intersection(self.roots)) > 0:
+            elif len(camelSplit) > 0:
                 # we may have a camel case situation
                 suspected_pii.append(col)
+                kwType.extend(list(camelSplit))
+
+        # if we found something 
+        if len(kwType) > 0:
+            kwType = list(np.unique(kwType))
 
         # get rid of any duplicates we've amassed and save it
         self.matches = list(np.unique(suspected_pii))
-        self.hitRate = round(len(suspected_pii) / len(self.features), 2)
+        self.kwMatches = kwType
 
-    def detectCC(self, str):
+        # prop of columns had possible PII
+        self.hitRate = round(len(suspected_pii) / len(self.features), 2)
+        # prop of columns WIHTOUT MISSINGNESS that have possible PII
+        self.adjHR = round(len(suspected_pii) / (len(self.features) - self.featsMissing.shape[0]), 2)
+        # prop of keywords that were found in the dataset PII
+        self.kwHR = round(len(kwType) / len(self.roots), 2)
+
+    def _detectCC(self, str):
         '''
         Adapted from GeeksForGeeks article Python | Split CamelCase string to individual strings.
 
