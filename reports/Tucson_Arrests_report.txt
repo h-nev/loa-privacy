@@ -1,10 +1,14 @@
  File: Tucson_Arrests 
  File Type: csv 
+
  Features: 27 
+ Features with Missingness: 4 
  Records: 68378 
 
- Possible PII Matches: 6 
- Hit Rate: 0.22 
+ Raw Hit Rate: 0.22 
 
+ Possible PII Matches: 6 
  Possible Matches: ['ADDRESS_PUBLIC', 'NAME', 'age', 'date_arr', 'ethnicity', 'state'] 
- Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
+
+ Keyword Hit Rate: 0.27 
+ Keyword Matches: ['address', 'age', 'date', 'ethnicity', 'name', 'state']

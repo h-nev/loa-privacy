@@ -1,10 +1,14 @@
  File: Phoenix_Arrests 
  File Type: csv 
+
  Features: 35 
+ Features with Missingness: 9 
  Records: 210225 
 
- Possible PII Matches: 10 
- Hit Rate: 0.29 
+ Raw Hit Rate: 0.29 
 
+ Possible PII Matches: 10 
  Possible Matches: ['COUNCIL_DISTRICT', 'COUNCIL_DISTRICT_NUM', 'DATE_OCCUR', 'DAY_OF_WEEK', 'MONTH', 'SUBJ_AGE', 'SUBJ_AGE_GROUP', 'SUBJ_ETHNICITY', 'UNIQUE_NAME_ID', 'YEAR'] 
- Keyword List: ['name', 'date', 'time', 'address', 'street', 'residence', 'country', 'county', 'state', 'district', 'code', 'number', 'age', 'ethnicity', 'gender', 'occupation', 'status', 'dob', 'year', 'month', 'day']
+
+ Keyword Hit Rate: 0.36 
+ Keyword Matches: ['age', 'date', 'day', 'district', 'ethnicity', 'month', 'name', 'year']
