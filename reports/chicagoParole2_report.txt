@@ -1,11 +1,11 @@
- File: chicagoParole 
- File Type: xlsx 
+ File: chicagoParole2 
+ File Type: csv 
 
- Features: 30 
- Features with Missingness: 5 
- Records: 15630 
+ Features: 31 
+ Features with Missingness: 3 
+ Records: 4668 
 
- Raw Hit Rate: 0.4 
+ Raw Hit Rate: 0.39 
 
  Possible PII Matches: 12 
  Possible Matches: ['Age', 'County of Residence', 'Current Admission Date', 'Custody Date', 'Date of Birth', 'MSR/Parole Date', 'Name', 'Projected Discharge Date', 'Residence Zip Code', 'Sentence Date', 'Sentencing County', 'Veteran Status'] 
