@@ -1,14 +1,33 @@
  File: Baltimore_Arrests 
- File Type: csv 
+File Type: csv 
 
- Features: 21 
- Features with Missingness: 16 
- Records: 371334 
+Features: 21 
+Records: 371334 
 
- Raw Hit Rate: 0.29 
+Raw Hit Rate: 0.29 
 
- Possible PII Matches: 6 
- Possible Matches: ['Age', 'ArrestDateTime', 'ArrestNumber', 'District', 'Gender', 'IncidentNumber'] 
+Possible PII Matches: 6 
+Possible Matches: ['Age', 'ArrestDateTime', 'ArrestNumber', 'District', 'Gender', 'IncidentNumber'] 
 
- Keyword Hit Rate: 0.27 
- Keyword Matches: ['age', 'date', 'district', 'gender', 'number', 'time']
+Keyword Hit Rate: 0.27 
+Keyword Matches: ['age', 'date', 'district', 'gender', 'number', 'time'] 
+
+Features with Missingness: 16 
+Missing Features: 
+X                   0.392727
+Y                   0.392727
+IncidentNumber      0.386612
+ArrestNumber        0.045180
+Age                 0.000355
+Gender              0.000092
+Race                0.000234
+ArrestLocation      0.377795
+IncidentLocation    0.377795
+Charge              0.130438
+District            0.414325
+Post                0.414325
+Neighborhood        0.414398
+Latitude            0.392727
+Longitude           0.392727
+Shape               1.000000
+dtype: float64

@@ -1,14 +1,23 @@
  File: Denver_Stops 
- File Type: csv 
+File Type: csv 
 
- Features: 14 
- Features with Missingness: 6 
- Records: 1063691 
+Features: 14 
+Records: 1063691 
 
- Raw Hit Rate: 0.36 
+Raw Hit Rate: 0.36 
 
- Possible PII Matches: 5 
- Possible Matches: ['ADDRESS', 'DISTRICT_ID', 'MASTER_INCIDENT_NUMBER', 'NEIGHBORHOOD_NAME', 'TIME_PHONEPICKUP'] 
+Possible PII Matches: 5 
+Possible Matches: ['ADDRESS', 'DISTRICT_ID', 'MASTER_INCIDENT_NUMBER', 'NEIGHBORHOOD_NAME', 'TIME_PHONEPICKUP'] 
 
- Keyword Hit Rate: 0.23 
- Keyword Matches: ['address', 'district', 'name', 'number', 'time']
+Keyword Hit Rate: 0.23 
+Keyword Matches: ['address', 'district', 'name', 'number', 'time'] 
+
+Features with Missingness: 6 
+Missing Features: 
+MASTER_INCIDENT_NUMBER    0.000004
+PRIORITY_DESCRIPTION      0.000008
+CALL_DISPOSITION          0.002854
+DISTRICT_ID               0.021799
+PRECINCT_ID               0.022412
+NEIGHBORHOOD_NAME         0.021632
+dtype: float64

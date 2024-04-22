@@ -1,14 +1,25 @@
  File: DC_Stop 
- File Type: csv 
+File Type: csv 
 
- Features: 11 
- Features with Missingness: 8 
- Records: 23325 
+Features: 11 
+Records: 23325 
 
- Raw Hit Rate: 0.55 
+Raw Hit Rate: 0.55 
 
- Possible PII Matches: 6 
- Possible Matches: ['Age', 'Block Address', 'Incident Location District', 'Report_taken_date_EST', 'Subject_Ethnicity', 'Year'] 
+Possible PII Matches: 6 
+Possible Matches: ['Age', 'Block Address', 'Incident Location District', 'Report_taken_date_EST', 'Subject_Ethnicity', 'Year'] 
 
- Keyword Hit Rate: 0.27 
- Keyword Matches: ['address', 'age', 'date', 'district', 'ethnicity', 'year']
+Keyword Hit Rate: 0.27 
+Keyword Matches: ['address', 'age', 'date', 'district', 'ethnicity', 'year'] 
+
+Features with Missingness: 8 
+Missing Features: 
+Data Type                     0.018778
+Subject_Race                  0.018778
+Subject_Sex                   0.018778
+Subject_Ethnicity             0.018778
+Block Address                 0.000514
+Incident Location District    0.014019
+Incident Location PSA         0.015991
+Age                           0.121286
+dtype: float64
