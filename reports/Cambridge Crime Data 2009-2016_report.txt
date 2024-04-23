@@ -1,14 +1,19 @@
- File: Cambridge Crime Data 2009-2016 
- File Type: csv 
+File: Cambridge Crime Data 2009-2016 
+File Type: csv 
 
- Features: 7 
- Features with Missingness: 3 
- Records: 56014 
+Features: 7 
+Records: 56014 
 
- Raw Hit Rate: 0.43 
+Raw Hit Rate: 0.43 
 
- Possible PII Matches: 3 
- Possible Matches: ['Crime Date Time', 'Date of Report', 'File Number'] 
+Possible PII Matches: 3 
+Possible Matches: ['Crime Date Time', 'Date of Report', 'File Number'] 
 
- Keyword Hit Rate: 0.14 
- Keyword Matches: ['date', 'number', 'time']
+Keyword Hit Rate: 0.13 
+Keyword Matches: ['date', 'number', 'time'] 
+
+Features with Missingness: 3 
+Missing Features: 
+Reporting Area    0.000036
+Neighborhood      0.000036
+Location          0.001482

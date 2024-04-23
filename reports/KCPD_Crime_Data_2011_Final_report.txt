@@ -1,14 +1,31 @@
- File: KCPD_Crime_Data_2011_Final 
- File Type: csv 
+File: KCPD_Crime_Data_2011_Final 
+File Type: csv 
 
- Features: 24 
- Features with Missingness: 15 
- Records: 128514 
+Features: 24 
+Records: 128514 
 
- Raw Hit Rate: 0.38 
+Raw Hit Rate: 0.42 
 
- Possible PII Matches: 9 
- Possible Matches: ['Address', 'Age', 'From Time', 'From_Date', 'Reported Time', 'Reported_Date', 'To Time', 'To_Date', 'Zip Code'] 
+Possible PII Matches: 10 
+Possible Matches: ['Address', 'Age', 'From Time', 'From_Date', 'Reported Time', 'Reported_Date', 'Sex', 'To Time', 'To_Date', 'Zip Code'] 
 
- Keyword Hit Rate: 0.23 
- Keyword Matches: ['address', 'age', 'code', 'date', 'time']
+Keyword Hit Rate: 0.26 
+Keyword Matches: ['address', 'age', 'code', 'date', 'sex', 'time'] 
+
+Features with Missingness: 15 
+Missing Features: 
+From_Date     0.001222
+From Time     0.001976
+To_Date       0.566693
+To Time       0.570171
+IBRS          0.008871
+Beat          0.002630
+Address       0.000125
+City          0.000125
+Zip Code      0.024791
+Rep_Dist      0.004124
+Area          0.004124
+Race          0.133355
+Sex           0.133355
+Age           0.432428
+Location 1    0.000903

@@ -1,14 +1,53 @@
- File: tn_nashville_2020_04_01 
- File Type: csv 
+File: tn_nashville_2020_04_01 
+File Type: csv 
 
- Features: 42 
- Features with Missingness: 37 
- Records: 3092351 
+Features: 42 
+Records: 3092351 
 
- Raw Hit Rate: 0.17 
+Raw Hit Rate: 0.19 
 
- Possible PII Matches: 7 
- Possible Matches: ['date', 'raw_misd_state_citation_issued', 'raw_row_number', 'raw_suspect_ethnicity', 'subject_age', 'time', 'vehicle_registration_state'] 
+Possible PII Matches: 8 
+Possible Matches: ['date', 'raw_misd_state_citation_issued', 'raw_row_number', 'raw_suspect_ethnicity', 'subject_age', 'subject_sex', 'time', 'vehicle_registration_state'] 
 
- Keyword Hit Rate: 0.27 
- Keyword Matches: ['age', 'date', 'ethnicity', 'number', 'state', 'time']
+Keyword Hit Rate: 0.3 
+Keyword Matches: ['age', 'date', 'ethnicity', 'number', 'sex', 'state', 'time'] 
+
+Features with Missingness: 37 
+Missing Features: 
+time                              1.767911e-03
+lat                               6.050607e-02
+lng                               6.050607e-02
+precinct                          1.261894e-01
+reporting_area                    1.074888e-01
+zone                              1.261894e-01
+subject_age                       2.713146e-04
+subject_race                      5.982503e-04
+subject_sex                       4.146360e-03
+officer_id_hash                   3.557164e-06
+violation                         2.593496e-03
+arrest_made                       9.054600e-06
+citation_issued                   1.034811e-04
+warning_issued                    1.089786e-04
+outcome                           6.257375e-04
+contraband_found                  9.587029e-01
+contraband_drugs                  9.587029e-01
+contraband_weapons                9.587029e-01
+frisk_performed                   7.114328e-06
+search_conducted                  1.261176e-05
+search_person                     1.390528e-05
+search_vehicle                    1.325852e-05
+search_basis                      9.587029e-01
+reason_for_stop                   2.593496e-03
+vehicle_registration_state        1.028053e-02
+notes                             8.342239e-01
+raw_verbal_warning_issued         1.089786e-04
+raw_written_warning_issued        1.594551e-01
+raw_traffic_citation_issued       1.038045e-04
+raw_misd_state_citation_issued    2.243646e-01
+raw_suspect_ethnicity             2.490015e-05
+raw_driver_searched               9.701357e-06
+raw_passenger_searched            2.910407e-06
+raw_search_consent                6.790950e-06
+raw_search_arrest                 4.203921e-06
+raw_search_inventory              6.467571e-07
+raw_search_plain_view             2.263650e-06

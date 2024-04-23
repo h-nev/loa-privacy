@@ -1,14 +1,23 @@
- File: BPD_Part_1_Victim_Based_Crime_Data 
- File Type: csv 
+File: BPD_Part_1_Victim_Based_Crime_Data 
+File Type: csv 
 
- Features: 11 
- Features with Missingness: 7 
- Records: 264496 
+Features: 11 
+Records: 264496 
 
- Raw Hit Rate: 0.36 
+Raw Hit Rate: 0.36 
 
- Possible PII Matches: 4 
- Possible Matches: ['CrimeCode', 'CrimeDate', 'CrimeTime', 'District'] 
+Possible PII Matches: 4 
+Possible Matches: ['CrimeCode', 'CrimeDate', 'CrimeTime', 'District'] 
 
- Keyword Hit Rate: 0.18 
- Keyword Matches: ['code', 'date', 'district', 'time']
+Keyword Hit Rate: 0.17 
+Keyword Matches: ['code', 'date', 'district', 'time'] 
+
+Features with Missingness: 7 
+Missing Features: 
+Location        0.006821
+Description     0.015316
+Weapon          0.660362
+Post            0.000794
+District        0.000231
+Neighborhood    0.007081
+Location 1      0.006813
