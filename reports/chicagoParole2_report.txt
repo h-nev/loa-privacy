@@ -4,13 +4,13 @@ File Type: csv
 Features: 31 
 Records: 4668 
 
-Raw Hit Rate: 0.39 
+Raw Hit Rate: 0.42 
 
-Possible PII Matches: 12 
-Possible Matches: ['Age', 'County of Residence', 'Current Admission Date', 'Custody Date', 'Date of Birth', 'MSR/Parole Date', 'Name', 'Projected Discharge Date', 'Residence Zip Code', 'Sentence Date', 'Sentencing County', 'Veteran Status'] 
+Possible PII Matches: 13 
+Possible Matches: ['Age', 'County of Residence', 'Current Admission Date', 'Custody Date', 'Date of Birth', 'MSR/Parole Date', 'Name', 'Projected Discharge Date', 'Residence Zip Code', 'Sentence Date', 'Sentencing County', 'Sex', 'Veteran Status'] 
 
-Keyword Hit Rate: 0.32 
-Keyword Matches: ['age', 'code', 'county', 'date', 'name', 'residence', 'status'] 
+Keyword Hit Rate: 0.35 
+Keyword Matches: ['age', 'code', 'county', 'date', 'name', 'residence', 'sex', 'status'] 
 
 Features with Missingness: 3 
 Missing Features: 

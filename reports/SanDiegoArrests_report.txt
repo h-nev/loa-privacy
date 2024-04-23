@@ -4,13 +4,13 @@ File Type: csv
 Features: 19 
 Records: 676244 
 
-Raw Hit Rate: 0.11 
+Raw Hit Rate: 0.16 
 
-Possible PII Matches: 2 
-Possible Matches: ['age', 'year'] 
+Possible PII Matches: 3 
+Possible Matches: ['age', 'sex', 'year'] 
 
-Keyword Hit Rate: 0.09 
-Keyword Matches: ['age', 'year'] 
+Keyword Hit Rate: 0.13 
+Keyword Matches: ['age', 'sex', 'year'] 
 
 Features with Missingness: 7 
 Missing Features: 

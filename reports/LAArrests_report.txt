@@ -9,8 +9,8 @@ Raw Hit Rate: 0.56
 Possible PII Matches: 14 
 Possible Matches: ['Address', 'Age', 'Area Name', 'Arrest Date', 'Arrest Type Code', 'Booking Date', 'Booking Location Code', 'Booking Time', 'Charge Group Code', 'Cross Street', 'Descent Code', 'Reporting District', 'Sex Code', 'Time'] 
 
-Keyword Hit Rate: 0.36 
-Keyword Matches: ['address', 'age', 'code', 'date', 'district', 'name', 'street', 'time'] 
+Keyword Hit Rate: 0.39 
+Keyword Matches: ['address', 'age', 'code', 'date', 'district', 'name', 'sex', 'street', 'time'] 
 
 Features with Missingness: 11 
 Missing Features: 

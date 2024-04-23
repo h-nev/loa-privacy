@@ -175,6 +175,7 @@ We can run the script in two ways. The first option will use the default options
 - Age
 - Ethnicity
 - Gender
+- Sex
 - Occupation
 - Status
 - DOB

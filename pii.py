@@ -5,7 +5,7 @@ import sys
 import ast
 
 class PIIScan():
-    def __init__(self, filePath: str, pii = ['Name', 'Date', 'SSN', 'Time', 'Address', 'Street', 'Residence', 'Country', 'County', 'State', 'District', 'Code', 'Number', 'Age', 'Ethnicity', 'Gender', 'Occupation', 'Status', 'DOB', 'Year', 'Month', 'Day']):
+    def __init__(self, filePath: str, pii = ['Name', 'Date', 'SSN', 'Time', 'Address', 'Street', 'Residence', 'Country', 'County', 'State', 'District', 'Code', 'Number', 'Age', 'Ethnicity', 'Gender', 'Sex', 'Occupation', 'Status', 'DOB', 'Year', 'Month', 'Day']):
         '''
         Reads a dataset (csv or xlsx supported) given a filepath, saves it and the metadata, and checks for partial or complete PII matches.
 
