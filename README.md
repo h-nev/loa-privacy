@@ -71,29 +71,21 @@ As time passes, more data is released for general use. Consequently, the feasibi
 
 ```
 .
+  |-setup.sh
+  |-LICENSE
   |-requirements.txt
-  |-archive
-  |  |-MHCLD.ipynb
-  |  |-chicago.ipynb
+  |-references
+  |  |-NoD_lightBackground.png
+  |  |-Number_of_Datasets.png
+  |  |-workflow.png
   |-Makefile
   |-runall.sh
-  |-__pycache__
-  |  |-pii.cpython-312.pyc
   |-README.md
   |-.gitignore
   |-dev
   |  |-filescan.ipynb
-  |  |-readpdf.ipynb
   |-data
-  |  |-SeattleArrests.csv
-  |  |-NYPD_Arrest_Data__Year_to_Date__20240410.csv
-  |  |-Illinois_parole_reg.pdf
-  |  |-README.md
-  |  |-Parole pop subset.xlsx
-  |  |-LAArrests.csv
-  |  |-DallasArrests.csv
-  |  |-AtlantaArrests.csv
-  |  |-SanDiegoArrests.csv
+  |  |- ...
   |-tree.txt
   |-pii.py
   |-reports
@@ -103,11 +95,10 @@ As time passes, more data is released for general use. Consequently, the feasibi
   |  |-Phoenix_Arrests_report.txt
   |  |-tn_nashville_2020_04_01_report.txt
   |  |-Philly_Stops_report.txt
-  |  |-chicagoParole_report.txt
-  |  |-Parole pop subset_report.txt
   |  |-LAArrests_report.txt
   |  |-Cambridge Crime Data 2009-2016_report.txt
   |  |-BPD_Part_1_Victim_Based_Crime_Data_report.txt
+  |  |-chicagoParole2_report.txt
   |  |-DC_Stop_report.txt
   |  |-AtlantaArrests_report.txt
   |  |-SanDiegoArrests_report.txt
