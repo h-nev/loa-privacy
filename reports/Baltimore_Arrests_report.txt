@@ -1,4 +1,4 @@
- File: Baltimore_Arrests 
+File: Baltimore_Arrests 
 File Type: csv 
 
 Features: 21 
@@ -9,7 +9,7 @@ Raw Hit Rate: 0.29
 Possible PII Matches: 6 
 Possible Matches: ['Age', 'ArrestDateTime', 'ArrestNumber', 'District', 'Gender', 'IncidentNumber'] 
 
-Keyword Hit Rate: 0.27 
+Keyword Hit Rate: 0.26 
 Keyword Matches: ['age', 'date', 'district', 'gender', 'number', 'time'] 
 
 Features with Missingness: 16 
@@ -30,4 +30,3 @@ Neighborhood        0.414398
 Latitude            0.392727
 Longitude           0.392727
 Shape               1.000000
-dtype: float64

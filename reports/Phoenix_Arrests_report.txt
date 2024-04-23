@@ -1,16 +1,16 @@
- File: Phoenix_Arrests 
+File: Phoenix_Arrests 
 File Type: csv 
 
 Features: 35 
 Records: 210225 
 
-Raw Hit Rate: 0.29 
+Raw Hit Rate: 0.34 
 
-Possible PII Matches: 10 
-Possible Matches: ['COUNCIL_DISTRICT', 'COUNCIL_DISTRICT_NUM', 'DATE_OCCUR', 'DAY_OF_WEEK', 'MONTH', 'SUBJ_AGE', 'SUBJ_AGE_GROUP', 'SUBJ_ETHNICITY', 'UNIQUE_NAME_ID', 'YEAR'] 
+Possible PII Matches: 12 
+Possible Matches: ['ARST_OFFICER_SEX', 'COUNCIL_DISTRICT', 'COUNCIL_DISTRICT_NUM', 'DATE_OCCUR', 'DAY_OF_WEEK', 'MONTH', 'SUBJ_AGE', 'SUBJ_AGE_GROUP', 'SUBJ_ETHNICITY', 'SUBJ_SEX', 'UNIQUE_NAME_ID', 'YEAR'] 
 
-Keyword Hit Rate: 0.36 
-Keyword Matches: ['age', 'date', 'day', 'district', 'ethnicity', 'month', 'name', 'year'] 
+Keyword Hit Rate: 0.39 
+Keyword Matches: ['age', 'date', 'day', 'district', 'ethnicity', 'month', 'name', 'sex', 'year'] 
 
 Features with Missingness: 9 
 Missing Features: 
@@ -23,4 +23,3 @@ BEAT_NUM                0.029002
 BEAT                    0.029002
 MAPGRID                 0.028983
 COUNCIL_DISTRICT_NUM    0.029311
-dtype: float64

@@ -1,4 +1,4 @@
- File: Denver_Stops 
+File: Denver_Stops 
 File Type: csv 
 
 Features: 14 
@@ -9,7 +9,7 @@ Raw Hit Rate: 0.36
 Possible PII Matches: 5 
 Possible Matches: ['ADDRESS', 'DISTRICT_ID', 'MASTER_INCIDENT_NUMBER', 'NEIGHBORHOOD_NAME', 'TIME_PHONEPICKUP'] 
 
-Keyword Hit Rate: 0.23 
+Keyword Hit Rate: 0.22 
 Keyword Matches: ['address', 'district', 'name', 'number', 'time'] 
 
 Features with Missingness: 6 
@@ -20,4 +20,3 @@ CALL_DISPOSITION          0.002854
 DISTRICT_ID               0.021799
 PRECINCT_ID               0.022412
 NEIGHBORHOOD_NAME         0.021632
-dtype: float64
