@@ -11,7 +11,8 @@
 - [Potential Impact](#potential-impact)
 - [Datasets](#datasets)
 - [Repo Structure](#repo-structure)
-- [Running the File Auto-Scan Method](#running-the-file-auto-scan-method)
+- [Getting Started](#getting-started)
+- [Running File Auto-Scanning](#running-file-auto-scanning)
 - [Running All Data Files at Once](#running-all-data-files-at-once)
 
 ## Course Information
@@ -43,8 +44,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
 
 ## Datasets & Supplemental Data
 
-- [Illinois Parole](https://corrections.il.readydata.org/parole-dashboard)
-  - [Parole Registary](https://prb.illinois.gov/content/dam/soi/en/web/prb/documents/parole-registry/Regparda.pdf)
+- [Illinois Parole (Subset to Chicago)](https://corrections.il.readydata.org/parole-dashboard)
 - [NYC Arrests](https://data.cityofnewyork.us/Public-Safety/NYPD-Arrest-Data-Year-to-Date-/uip8-fykc/data_preview)
 - [Dallas Arrests](https://www.dallasopendata.com/Public-Safety/Police-Arrests/sdr7-6v3j/about_data)
 - [Seattle Arrests](https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5/about_data)
@@ -111,7 +111,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
   |  |-SeattleArrests_report.txt
 ```
 
-## Running the File Auto-Scan Method
+## Getting Started
 
 > Requirements
 >
@@ -120,7 +120,7 @@ As time passes, more data is released for general use. Consequently, the feasibi
 
 This program requires `Python 3.11` and `pip` to be installed on your machine. The following instructions include terminal commands, which have been written for MacOS and Linux users. Windows users can use `gitbash` to emulate this workflow. 
 
-### 0.0 Downloading the Repository
+### 1. Downloading the Repository
 
 To get started, please `clone` this repo by navigating to a directory on your local machine (using terminal) where you'd like the program to live. In terminal, run the following command.
 
@@ -132,7 +132,7 @@ You can also avoid this step of using the terminal by clicking on the blue `Code
 
 In the directory you original navigated to, you should now see a directory called `loa-privacy`. 
 
-### 0.1 Enviornment Setup
+### 2. Enviornment Setup
 
 To ensure smooth operation, enviorment setup is handled for you. Using the command line, navigate to the `loa-privacy` directory if you are not already there. In the command line, run the following command.
 
@@ -147,6 +147,8 @@ source bin/activate
 ```
 
 This will ensure the enviornment is activated and you can run the `pii.py` script and start scanning CSV or XLSX files.
+
+## Running File Auto-Scanning
 
 ### 1. Save CSV or XLSX Files Locally 
 
