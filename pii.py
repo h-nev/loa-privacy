@@ -52,7 +52,7 @@ class PIIScan():
         print(self)
 
     def __str__(self):
-        return f' File: {self.fileName} \nFile Type: {self.fileExtension} \n\nFeatures: {len(self.features)} \nRecords: {len(self.df)} \n\nRaw Hit Rate: {self.hitRate} \n\nPossible PII Matches: {len(self.matches)} \nPossible Matches: {self.matches} \n\nKeyword Hit Rate: {self.kwHR} \nKeyword Matches: {self.kwMatches} \n\nFeatures with Missingness: {self.featsMissing.shape[0]} \nMissing Features: \n{self.featsMissing}'
+        return f'File: {self.fileName} \nFile Type: {self.fileExtension} \n\nFeatures: {len(self.features)} \nRecords: {len(self.df)} \n\nRaw Hit Rate: {self.hitRate} \n\nPossible PII Matches: {len(self.matches)} \nPossible Matches: {self.matches} \n\nKeyword Hit Rate: {self.kwHR} \nKeyword Matches: {self.kwMatches} \n\nFeatures with Missingness: {self.featsMissing.shape[0]} \nMissing Features: \n{self.featsMissing.to_string(dtype=False)}'
 
     def _readFile(self):
         '''
