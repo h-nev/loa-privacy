@@ -1,14 +1,27 @@
- File: LAArrests 
- File Type: csv 
+File: LAArrests 
+File Type: csv 
 
- Features: 25 
- Features with Missingness: 11 
- Records: 277952 
+Features: 25 
+Records: 277952 
 
- Raw Hit Rate: 0.56 
+Raw Hit Rate: 0.56 
 
- Possible PII Matches: 14 
- Possible Matches: ['Address', 'Age', 'Area Name', 'Arrest Date', 'Arrest Type Code', 'Booking Date', 'Booking Location Code', 'Booking Time', 'Charge Group Code', 'Cross Street', 'Descent Code', 'Reporting District', 'Sex Code', 'Time'] 
+Possible PII Matches: 14 
+Possible Matches: ['Address', 'Age', 'Area Name', 'Arrest Date', 'Arrest Type Code', 'Booking Date', 'Booking Location Code', 'Booking Time', 'Charge Group Code', 'Cross Street', 'Descent Code', 'Reporting District', 'Sex Code', 'Time'] 
 
- Keyword Hit Rate: 0.36 
- Keyword Matches: ['address', 'age', 'code', 'date', 'district', 'name', 'street', 'time']
+Keyword Hit Rate: 0.36 
+Keyword Matches: ['address', 'age', 'code', 'date', 'district', 'name', 'street', 'time'] 
+
+Features with Missingness: 11 
+Missing Features: 
+Time                        0.000061
+Charge Group Code           0.085231
+Charge Group Description    0.085385
+Arrest Type Code            0.000004
+Charge Description          0.085231
+Disposition Description     0.079028
+Cross Street                0.525871
+Booking Date                0.214314
+Booking Time                0.214314
+Booking Location            0.214436
+Booking Location Code       0.214328

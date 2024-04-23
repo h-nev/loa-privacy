@@ -1,14 +1,23 @@
- File: SeattleArrests 
- File Type: csv 
+File: SeattleArrests 
+File Type: csv 
 
- Features: 17 
- Features with Missingness: 7 
- Records: 1113855 
+Features: 17 
+Records: 1113855 
 
- Raw Hit Rate: 0.35 
+Raw Hit Rate: 0.35 
 
- Possible PII Matches: 6 
- Possible Matches: ['100 Block Address', 'Offense Code', 'Offense End DateTime', 'Offense Start DateTime', 'Report DateTime', 'Report Number'] 
+Possible PII Matches: 6 
+Possible Matches: ['100 Block Address', 'Offense Code', 'Offense End DateTime', 'Offense Start DateTime', 'Report DateTime', 'Report Number'] 
 
- Keyword Hit Rate: 0.18 
- Keyword Matches: ['address', 'code', 'number', 'time']
+Keyword Hit Rate: 0.18 
+Keyword Matches: ['address', 'code', 'number', 'time'] 
+
+Features with Missingness: 7 
+Missing Features: 
+Offense Start DateTime    0.001551
+Offense End DateTime      0.427987
+Precinct                  0.000006
+Sector                    0.000006
+Beat                      0.000006
+MCPP                      0.000024
+100 Block Address         0.044905

@@ -1,5 +1,7 @@
 # Risk Assessment of Public Criminal Records
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Table of Contents
 
 - [Course Information](#course-information)
@@ -120,21 +122,48 @@ As time passes, more data is released for general use. Consequently, the feasibi
 
 ## Running the File Auto-Scan Method
 
-### 0. Environment Setup
+> Requirements
+>
+> - Python 3.11
+> - pip
 
-To ensure everything runs, ensure all the requirements are installed. If you are using a Python venv, make sure this is activated first. Then run:
+This program requires `Python 3.11` and `pip` to be installed on your machine. The following instructions include terminal commands, which have been written for MacOS and Linux users. Windows users can use `gitbash` to emulate this workflow. 
 
+### 0.0 Downloading the Repository
+
+To get started, please `clone` this repo by navigating to a directory on your local machine (using terminal) where you'd like the program to live. In terminal, run the following command.
+
+```{bash}
+git clone https://github.com/h-nev/loa-privacy.git
 ```
-pip install -r requirements.txt
+
+You can also avoid this step of using the terminal by clicking on the blue `Code` button on the top right of this repo and clicking `Download Zip`. Choose where you'd like this program to live, then unzip as normal. 
+
+In the directory you original navigated to, you should now see a directory called `loa-privacy`. 
+
+### 0.1 Enviornment Setup
+
+To ensure smooth operation, enviorment setup is handled for you. Using the command line, navigate to the `loa-privacy` directory if you are not already there. In the command line, run the following command.
+
+```{bash}
+bash setup.sh
 ```
+
+This will create the enviornment on your machine and download all package dependecnies. One this has completed, run the following command in terminal.
+
+```{bash}
+source bin/activate
+```
+
+This will ensure the enviornment is activated and you can run the `pii.py` script and start scanning CSV or XLSX files.
 
 ### 1. Save CSV or XLSX Files Locally 
 
 You can say the data anywhere locally, which makes sense. In this example, we save the `chicagoParole.csv` file to the `data` folder.
 
->CAUTION:
+> CAUTION:
 >
-> Please **do not** commit any csv or xlsx files to the repo.
+> Please **do not** commit any csv or xlsx files to the repo if you are a developer.
 
 ### 2. Run the `pii.py` Script
 

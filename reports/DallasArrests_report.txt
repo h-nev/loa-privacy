@@ -1,14 +1,74 @@
- File: DallasArrests 
- File Type: csv 
+File: DallasArrests 
+File Type: csv 
 
- Features: 65 
- Features with Missingness: 58 
- Records: 105161 
+Features: 65 
+Records: 105161 
 
- Raw Hit Rate: 0.26 
+Raw Hit Rate: 0.26 
 
- Possible PII Matches: 17 
- Possible Matches: ['Age', 'AgeAtArrestTime', 'AliasName', 'ArArrestDate', 'ArArrestTime', 'ArBkDate', 'ArLAddress', 'ArLCounty', 'ArLDistrict', 'ArState', 'ArrestNumber', 'ArresteeName', 'CFS_Number', 'JobSchStatus', 'NickName', 'Occupation', 'UpZDate'] 
+Possible PII Matches: 17 
+Possible Matches: ['Age', 'AgeAtArrestTime', 'AliasName', 'ArArrestDate', 'ArArrestTime', 'ArBkDate', 'ArLAddress', 'ArLCounty', 'ArLDistrict', 'ArState', 'ArrestNumber', 'ArresteeName', 'CFS_Number', 'JobSchStatus', 'NickName', 'Occupation', 'UpZDate'] 
 
- Keyword Hit Rate: 0.5 
- Keyword Matches: ['address', 'age', 'county', 'date', 'district', 'name', 'number', 'occupation', 'state', 'status', 'time']
+Keyword Hit Rate: 0.5 
+Keyword Matches: ['address', 'age', 'county', 'date', 'district', 'name', 'number', 'occupation', 'state', 'status', 'time'] 
+
+Features with Missingness: 58 
+Missing Features: 
+ArBkDate           0.002301
+ArLAddress         0.000190
+ArLApt             0.918030
+ArLZip             0.000352
+ArLCity            0.000770
+ArState            0.004051
+ArLCounty          0.018733
+ArLRA              0.162741
+ArLBeat            0.026217
+ArLDistrict        0.066612
+ArLSector          0.421820
+ArPremises         0.254610
+CFS_Number         0.005144
+ArOfcr1            0.000342
+ArOfcr2            0.263501
+Transport1         0.000609
+Transport2         0.410485
+Transport3         0.999971
+Search1            0.999990
+ArAction           0.000048
+ArWeapon           0.388300
+ArOSR              1.000000
+ArResisted         1.000000
+ArCurrLoc          0.026654
+ArCond             0.996596
+ArMedFlag          1.000000
+ArMedLoc           0.968486
+ArOpComm           1.000000
+ArresteeName       0.000105
+NickName           0.968819
+AliasName          0.993838
+BirthPlace         0.542482
+Age                0.001569
+AgeAtArrestTime    0.057398
+HAddress           0.020920
+HApt               0.755679
+HZIP               0.049400
+HCity              0.022594
+HState             0.045074
+HRA                0.483839
+HBeat              0.432508
+Height             0.001560
+Weight             0.001712
+Hair               0.035022
+Eyes               0.002910
+Race               0.000171
+Ethnic             0.000523
+Sex                0.000979
+Tatoo              0.956334
+TatooComment       0.977168
+Occupation         0.950733
+JobSchStatus       1.000000
+Employer           0.924449
+Drug               0.995512
+DrugRelated        0.170928
+DrugType           0.877863
+ClothingWorn       0.016090
+Expunged           1.000000

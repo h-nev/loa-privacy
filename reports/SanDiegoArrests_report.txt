@@ -1,14 +1,23 @@
- File: SanDiegoArrests 
- File Type: csv 
+File: SanDiegoArrests 
+File Type: csv 
 
- Features: 19 
- Features with Missingness: 7 
- Records: 676244 
+Features: 19 
+Records: 676244 
 
- Raw Hit Rate: 0.11 
+Raw Hit Rate: 0.11 
 
- Possible PII Matches: 2 
- Possible Matches: ['age', 'year'] 
+Possible PII Matches: 2 
+Possible Matches: ['age', 'year'] 
 
- Keyword Hit Rate: 0.09 
- Keyword Matches: ['age', 'year']
+Keyword Hit Rate: 0.09 
+Keyword Matches: ['age', 'year'] 
+
+Features with Missingness: 7 
+Missing Features: 
+personrole     0.026826
+race           0.088623
+age            0.260224
+sex            0.040852
+zipcode        0.013964
+censusblock    0.056274
+censustract    0.056274
