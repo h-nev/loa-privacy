@@ -8,21 +8,12 @@
   |  |-workflow.png
   |-Makefile
   |-runall.sh
-  |-__pycache__
-  |  |-pii.cpython-312.pyc
   |-README.md
   |-.gitignore
   |-dev
   |  |-filescan.ipynb
   |-data
-  |  |-SeattleArrests.csv
-  |  |-NYPD_Arrest_Data__Year_to_Date__20240410.csv
-  |  |-README.md
-  |  |-LAArrests.csv
-  |  |-DallasArrests.csv
-  |  |-AtlantaArrests.csv
-  |  |-SanDiegoArrests.csv
-  |  |-chicagoParole2.csv
+  |  |- ...
   |-tree.txt
   |-pii.py
   |-reports
